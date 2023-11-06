@@ -6,14 +6,14 @@ import { FaXTwitter, FaPinterest } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
-      <div className="bg-blackPrimary flex justify-around items-center">
-        <span className="text-white">
+      <div className="bg-blackPrimary flex justify-around items-center pt-20">
+        <span className="text-white after:block after:w-28 after:bg-white after:h-0.5">
           <a href="https://www.instagram.com" target="_blank">
             Instagram Feed
           </a>
         </span>
 
-        <div className="w-1/4 h-auto">
+        <div className="w-1/4 h-auto relative left-6">
           <img src={logo} alt="logo" />
         </div>
 
@@ -47,30 +47,43 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div>
-        <div>
-          <h3>Contact</h3>
-          <span>
-            Call <p>33 156 78 89 56</p>
+      <div className="w-full flex justify-around items-center bg-blackPrimary pb-16 text-white">
+        <div className=" font-body text-left">
+          <h3 className="text-2xl after:block after:w-20 after:bg-darkYellow after:h-0.5 ">Contact</h3>
+          <div className="mt-6">
+          <p>5 Rue Dalou, 75015 Paris</p>
+          <span className="inline-flex gap-2 text-darkYellow">
+            Call <p className="text-white">+33 156 78 89 56</p>
           </span>
-          <p>contact@noirelegance.com</p>
+          <p className="text-darkYellow">contact@noirelegance.com</p>
+          </div>
+    
+        </div>
+
+        <div className="mt-16">
+          <p> Join our mailing list for updates, <br /> Get news & offers events.</p>
+          <div className="mt-8 flex items-center justify-center">
+          <input className="p-3 bg-blackPrimary border-white  border-0.5 focus:outline-none" type="email" placeholder="Email" />
+          <button className="py-3 px-16 bg-white text-black hover:bg-blackPrimary border-0.5 border-white transition-all duration-300 hover:text-white">Subscribe</button>
+          </div>
         </div>
 
         <div>
-          <p> Join our mailing list for updates, Get news & offers events.</p>
-          <input type="email"  placeholder="Email"/>
-          <button>Subscribe</button>
+          <h3 className="text-right relative text-xl mb-7 after:block after:w-32 after:bg-darkYellow after:h-0.5 after:absolute after:right-0">Working Hours</h3>
+          <span className="text-darkYellow inline-flex gap-2">
+            Mon - Fri: <p className="text-white">10:00am - 10:00pm</p>
+          </span>
+          <br />
+          <span className="text-darkYellow inline-flex gap-2">
+            Sat - Sun: <p className="text-white">11:00am - 2:00am</p>
+          </span>
         </div>
-
-        <div>
-          <h3>Working Hours</h3>
-          <span>Mon - Fri <p>10:00am - 10:00pm</p></span>
-          <span>Sat - Sun<p>11:00am - 2:00am</p></span>
-        </div>
-
-        <div>
-          <p>&copy; All right Reserved - Noir Elegance | Developed by Simsek.Dev</p>
-        </div>
+      </div>
+      <div className="bg-blackPrimary">
+        <hr className="border-gray-600"/>
+        <p className="py-9 text-white">
+          &copy; All right Reserved - Noir Elegance | Developed by <span className="text-darkYellow">Simsek.Dev</span> 
+        </p>
       </div>
     </>
   );

@@ -36,6 +36,10 @@ module.exports = {
         blackLight: "#343942",
       },
 
+      borderWidth: {
+        '0.5': '0.5px',
+      },
+
       fontWeight: {
         regular: 400,
         normal: 500,

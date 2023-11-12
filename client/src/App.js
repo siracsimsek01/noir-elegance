@@ -22,6 +22,7 @@ import {
 } from "../src/assets/img/index";
 import MenuItem from "./components/MenuItem/MenuItem";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Offer from "./components/Offer/Offer";
 
 const App = () => {
   const circle = (
@@ -256,6 +257,7 @@ const App = () => {
         </div>
 
         <Testimonials />
+        <Offer />
       </main>
       {/* <Footer /> */}
     </div>

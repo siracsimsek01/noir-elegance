@@ -21,3 +21,5 @@ export { default as Testimonials4 } from './Testimonials4.jpg';
 export { default as Testimonials5 } from './Testimonials5.jpg';
 export { default as Testimonials6 } from './Testimonials6.jpg';
 export { default as TestimonialsImg } from './TestimonialsImg.png';
+export { default as offer1 } from './offer1.png';
+export { default as offer2 } from './offer2.png';

@@ -26,6 +26,7 @@ module.exports = {
 
     fontFamily: {
       body: ["Cormorant Infant", "sans"],
+      sans: ["Roboto", "sans-serif"],
     },
 
     extend: {

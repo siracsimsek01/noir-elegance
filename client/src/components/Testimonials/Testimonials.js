@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,6 +16,25 @@ import "./Testimonials.css";
 import ScrollReveal from "scrollreveal";
 
 export default function Testimonials() {
+  useEffect(() => {
+    ScrollReveal().reveal("#testimonialsText", {
+      delay: 500,
+      duration: 1000,
+      origin: "top",
+      distance: "50px",
+      interval: 100,
+      reset: false,
+    });
+    ScrollReveal().reveal("#testimonialsImg", {
+      delay: 500,
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      interval: 100,
+      reset: false,
+    });
+  });
+
   let settings = {
     dots: true,
     infinite: true,
@@ -30,7 +49,7 @@ export default function Testimonials() {
   return (
     <>
       <div className="bg-blackPrimary pb-32 text-white font-body pl-64 pt-28">
-        <div className="mb-14">
+        <div className="mb-14" id="testimonialsText">
           <h2 className="text-base font-medium after:block after:w-20 after:bg-darkYellow after:h-0.5 mb-4">
             Testimonials
           </h2>
@@ -92,7 +111,7 @@ export default function Testimonials() {
         </Slider>
 
       </div>
-        <div className="w-full bg-blackPrimary pt-10">
+        <div className="w-full bg-blackPrimary pt-10" id="testimonialsImg">
           <img src={TestimonialsImg} alt="TestimonialsImg" />
         </div>
     </>

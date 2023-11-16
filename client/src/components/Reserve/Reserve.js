@@ -1,8 +1,20 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Reserve.css";
 import { Reservation1 } from "../../assets/img/index";
+import ScrollReveal from "scrollreveal";
 
 export default function Reserve() {
+  useEffect(() => {
+    ScrollReveal().reveal("#reserveDiv", {
+      delay: 500,
+      duration: 1000,
+      origin: "top",
+      distance: "50px",
+      interval: 100,
+      reset: false,
+    });
+  });
+
   return (
     <>
       <div
@@ -13,7 +25,7 @@ export default function Reserve() {
           backgroundPosition: "center",
         }}
       >
-        <div className="relative z-10 px-40 py-36 bg-blackPrimary bg-opacity-95 flex flex-col items-center gap-2.5">
+        <div id="reserveDiv" className="relative z-10 px-40 py-36 bg-blackPrimary bg-opacity-95 flex flex-col items-center gap-2.5">
           <div className="text-center">
             <h3 className="text-xl font-medium text-white uppercase mb-4 after:content-[''] after:block after:w-26 after:h-0.5 after:bg-yellow-400 after:mt-2">
               Reservation

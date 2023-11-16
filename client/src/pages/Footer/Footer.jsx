@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/img/logo.png";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
           </a>
         </span>
 
-        <div className="w-1/4 h-auto relative left-6">
+        <div className="w-1/4 h-auto relative">
           <img src={logo} alt="logo" />
         </div>
 
@@ -61,7 +62,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16">
-          <p> Join our mailing list for updates, <br /> Get news & offers events.</p>
+          <p className="text-center"> Join our mailing list for updates, <br /> Get news & offers events.</p>
           <div className="mt-8 flex items-center justify-center">
           <input className="p-3 bg-blackPrimary border-white  border-0.5 focus:outline-none" type="email" placeholder="Email" />
           <button className="py-3 px-16 bg-white text-black hover:bg-blackPrimary border-0.5 border-white transition-all duration-300 hover:text-white">Subscribe</button>

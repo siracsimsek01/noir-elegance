@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {
   offer1,
   offer2,
@@ -11,17 +11,72 @@ import {
   offerIcon3,
   blog1,
   blog2,
-  Reservation1
 } from "../../assets/img/index";
 import Button from "../Buttons/NoirButton";
 import ScrollReveal from "scrollreveal";
 
 export default function Offer() {
   useEffect(() => {
-    ScrollReveal().reveal('#navbar',{
+    ScrollReveal().reveal('#offerTitle',{
       delay: 500,
       duration: 1000,
       origin: 'top',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#offerLeft',{
+      delay: 500,
+      duration: 1000,
+      origin: 'left',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#offerRight',{
+      delay: 500,
+      duration: 1000,
+      origin: 'right',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#menuTitle',{
+      delay: 500,
+      duration: 1000,
+      origin: 'top',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#menuItem',{
+      delay: 500,
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#servicesTitle',{
+      delay: 500,
+      duration: 1000,
+      origin: 'top',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#servicesItem',{
+      delay: 500,
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#blogTitle',{
+      delay: 500,
+      duration: 1000,
+      origin: 'top',
+      distance: '50px',
+      interval: 100
+    })
+    ScrollReveal().reveal('#blogItem',{
+      delay: 500,
+      duration: 1000,
+      origin: 'bottom',
       distance: '50px',
       interval: 100
     })
@@ -29,7 +84,7 @@ export default function Offer() {
   return (
     <>
       <div className="h-screen bg-white text-gray-800 text-base font-body pt-44">
-        <div className="text-center">
+        <div className="text-center" id="offerTitle">
           <h2 className="inline-block text-lg font-medium after:block after:w-10 after:bg-darkYellow after:h-0.5 mb-5 tracking-wider">
             Offer
           </h2>
@@ -43,13 +98,13 @@ export default function Offer() {
         </div>
 
         <div className="flex justify-center gap-8 items-center pt-8">
-          <img src={offer1} alt="offer1" />
-          <img src={offer2} alt="offer2" />
+          <img src={offer1} alt="offer1"  id="offerLeft"/>
+          <img src={offer2} alt="offer2" id="offerRight" />
         </div>
       </div>
 
       <div className="pb-10 pt-10 bg-white">
-        <div className="text-center font-body">
+        <div className="text-center font-body" id="menuTitle">
           <h2 className="inline-block text-lg font-medium after:block after:w-14 after:bg-darkYellow after:h-0.5 mb-5 tracking-wider">
             Menu
           </h2>
@@ -65,7 +120,7 @@ export default function Offer() {
 
       <div className="flex justify-center gap-8 font-body bg-white">
         <div>
-          <div>
+          <div id="menuItem">
             <img src={popular1} alt="popular1" />
             <span className="inline-flex justify-between w-80 mt-3">
               <h2 className="text-gray-800 text-2xl font-bold">
@@ -73,14 +128,15 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-          </div>
+        
           <p className="w-80 text-neutral-600 text-xl font-normal">
             Lorem Ipsum is that it has a more-or-less normal
           </p>
+          </div>
         </div>
 
         <div>
-          <div>
+          <div id="menuItem">
             <img src={popular2} alt="popular2" />
             <span className="inline-flex justify-between w-80 mt-3">
               <h2 className="text-gray-800 text-2xl font-bold">
@@ -88,14 +144,15 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-          </div>
+         
           <p className="w-80">
             Lorem Ipsum is that it has a more-or-less normal
           </p>
+          </div>
         </div>
 
         <div>
-          <div>
+          <div id="menuItem">
             <img src={popular3} alt="popular3" />
             <span className="inline-flex justify-between w-80 mt-3">
               <h2 className="text-gray-800 text-2xl font-bold">
@@ -103,14 +160,15 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-          </div>
+          
           <p className="w-80">
             Lorem Ipsum is that it has a more-or-less normal
           </p>
+          </div>
         </div>
 
         <div>
-          <div>
+          <div id="menuItem">
             <img src={popular4} alt="popular4" />
             <span className="inline-flex justify-between w-80 mt-3">
               <h2 className="text-gray-800 text-2xl font-bold">
@@ -118,10 +176,11 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-          </div>
+          
           <p className="w-80">
             Lorem Ipsum is that it has a more-or-less normal
           </p>
+          </div>
         </div>
       </div>
 
@@ -130,7 +189,7 @@ export default function Offer() {
       </div>
 
       <div className="bg-blackPrimary pt-32 h-screen px-80 flex items-center justify-around w-full">
-        <div className="text-white font-body mr-14">
+        <div className="text-white font-body mr-14" id="servicesTitle">
           <h2 className="uppercase  text-base font-medium after:block after:w-32 after:bg-darkYellow after:h-0.5 mb-5 ">
             What We Offer
           </h2>
@@ -141,7 +200,7 @@ export default function Offer() {
           </p>
         </div>
 
-        <div className="font-body text-white flex gap-10">
+        <div className="font-body text-white flex gap-10" id="servicesItem">
           <div className="py-12 px-12 bg-blackPrimary  text-center border-8 rounded-md border-zinc-700 flex flex-col items-center justify-center">
             <img src={offerIcon1} alt="offerIcon1" className="pb-2" />
             <h2>Opened 24/7</h2>
@@ -161,7 +220,7 @@ export default function Offer() {
 
       {/* Blog View */}
       <div className="pt-32 pb-32 bg-white">
-        <div className="text-center font-body">
+        <div className="text-center font-body" id="blogTitle">
           <h2 className="inline-block text-lg font-medium after:block after:w-10 after:bg-darkYellow after:h-0.5 mb-5 tracking-wider">
             Blog
           </h2>
@@ -175,7 +234,7 @@ export default function Offer() {
         </div>
 
         <div className="mt-16 flex justify-center gap-9 font-body">
-          <div>
+          <div id="blogItem">
             <img src={blog1} alt="blog1" />
             <div className="px-10 py-11 border border-black">
               <span className="inline-flex gap-3 ">
@@ -200,7 +259,7 @@ export default function Offer() {
             </div>
           </div>
 
-          <div>
+          <div id="blogItem">
             <img src={blog2} alt="blog2" />
             <div className="px-10 py-11 border border-black">
               <span className="inline-flex gap-3 ">

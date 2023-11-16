@@ -81,7 +81,7 @@ const Footer = () => {
       </div>
       <div className="bg-blackPrimary">
         <hr className="border-gray-600"/>
-        <p className="py-9 text-white">
+        <p className="py-9 text-white text-center">
           &copy; All right Reserved - Noir Elegance | Developed by <span className="text-darkYellow">Simsek.Dev</span> 
         </p>
       </div>

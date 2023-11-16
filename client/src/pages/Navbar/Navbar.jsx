@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../../components/Buttons/NoirButton";
 import logo from "../../assets/img/logo.png";
 import {
@@ -7,11 +7,33 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
+import ScrollReveal from 'scrollreveal';
 
 const Navbar = ({ showHeader, HeaderContent }) => {
+  useEffect(() =>{
+    ScrollReveal().reveal('#navbar', {
+      delay: 500,
+      duration: 2000,
+      origin: 'top',
+      distance: '300px',
+      interval: 500,
+      reset: false,
+    });
+
+    ScrollReveal().reveal('#navbarLink', {
+      delay: 500,
+      duration: 3000,
+      origin: 'left',
+      distance: '300px',
+      interval: 500,
+      reset: false,
+    });
+  })
+
   return (
     <>
-      <div className="bg-blackPrimary w-full pt-16 h-auto flex justify-around items-center pb-16">
+
+      <div id="navbar" className="bg-blackPrimary w-full pt-16 h-auto flex justify-around items-center pb-16">
         <div className="text-white">
           <Button type="primary">
             {" "}
@@ -34,7 +56,12 @@ const Navbar = ({ showHeader, HeaderContent }) => {
           </Button>
         </div>
       </div>
-      <div className="bg-blackPrimary">
+
+
+
+
+ 
+      <div className="bg-blackPrimary" id="navbarLink">
         <hr className="border-gray-600" />
         <div className="inline-flex justify-around items-center w-full py-7 font-body">
           <ul className="flex gap-10 text-neutral-200 text-lg ">
@@ -119,6 +146,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
         </div>
         <hr className="border-gray-600" />
       </div>
+  
 
       {showHeader && HeaderContent && (
         <div className="bg-blackPrimary h-64">

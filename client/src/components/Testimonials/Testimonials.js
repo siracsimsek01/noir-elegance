@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,6 +13,7 @@ import {
   TestimonialsImg,
 } from "../../assets/img/index";
 import "./Testimonials.css";
+import ScrollReveal from "scrollreveal";
 
 export default function Testimonials() {
   let settings = {
@@ -28,7 +29,7 @@ export default function Testimonials() {
 
   return (
     <>
-      <div className="bg-blackPrimary h-screen text-white font-body pl-64 pt-28">
+      <div className="bg-blackPrimary pb-32 text-white font-body pl-64 pt-28">
         <div className="mb-14">
           <h2 className="text-base font-medium after:block after:w-20 after:bg-darkYellow after:h-0.5 mb-4">
             Testimonials

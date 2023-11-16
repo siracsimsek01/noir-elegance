@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
   offer1,
   offer2,
@@ -11,13 +11,24 @@ import {
   offerIcon3,
   blog1,
   blog2,
+  Reservation1
 } from "../../assets/img/index";
 import Button from "../Buttons/NoirButton";
+import ScrollReveal from "scrollreveal";
 
 export default function Offer() {
+  useEffect(() => {
+    ScrollReveal().reveal('#navbar',{
+      delay: 500,
+      duration: 1000,
+      origin: 'top',
+      distance: '50px',
+      interval: 100
+    })
+  })
   return (
     <>
-      <div className="h-screen bg-white text-gray-800 text-base font-body mt-44">
+      <div className="h-screen bg-white text-gray-800 text-base font-body pt-44">
         <div className="text-center">
           <h2 className="inline-block text-lg font-medium after:block after:w-10 after:bg-darkYellow after:h-0.5 mb-5 tracking-wider">
             Offer
@@ -31,13 +42,13 @@ export default function Offer() {
           </p>
         </div>
 
-        <div className="flex justify-center gap-8 items-center mt-8">
+        <div className="flex justify-center gap-8 items-center pt-8">
           <img src={offer1} alt="offer1" />
           <img src={offer2} alt="offer2" />
         </div>
       </div>
 
-      <div className="pb-10 mt-10">
+      <div className="pb-10 pt-10 bg-white">
         <div className="text-center font-body">
           <h2 className="inline-block text-lg font-medium after:block after:w-14 after:bg-darkYellow after:h-0.5 mb-5 tracking-wider">
             Menu
@@ -52,7 +63,7 @@ export default function Offer() {
         </div>
       </div>
 
-      <div className="flex justify-center gap-8 font-body">
+      <div className="flex justify-center gap-8 font-body bg-white">
         <div>
           <div>
             <img src={popular1} alt="popular1" />
@@ -114,11 +125,11 @@ export default function Offer() {
         </div>
       </div>
 
-      <div className="text-center mt-10">
+      <div className="text-center pt-10 pb-10 bg-white">
         <Button type="primary">See all dishes</Button>
       </div>
 
-      <div className="bg-blackPrimary mt-32 h-screen px-80 flex items-center justify-around w-full">
+      <div className="bg-blackPrimary pt-32 h-screen px-80 flex items-center justify-around w-full">
         <div className="text-white font-body mr-14">
           <h2 className="uppercase  text-base font-medium after:block after:w-32 after:bg-darkYellow after:h-0.5 mb-5 ">
             What We Offer
@@ -149,7 +160,7 @@ export default function Offer() {
       </div>
 
       {/* Blog View */}
-      <div className="mt-32">
+      <div className="pt-32 pb-32 bg-white">
         <div className="text-center font-body">
           <h2 className="inline-block text-lg font-medium after:block after:w-10 after:bg-darkYellow after:h-0.5 mb-5 tracking-wider">
             Blog
@@ -214,6 +225,9 @@ export default function Offer() {
           </div>
         </div>
       </div>
+
+
+  
     </>
   );
 }

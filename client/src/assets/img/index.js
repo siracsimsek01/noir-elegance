@@ -32,3 +32,4 @@ export { default as offerIcon2} from './offerIcon2.png';
 export { default as offerIcon3} from './offerIcon3.png';
 export { default as blog1} from './blog1.png';
 export { default as blog2} from './blog2.png';
+export { default as Reservation1} from './Reservation1.jpg';

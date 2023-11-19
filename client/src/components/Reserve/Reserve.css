@@ -1,6 +1,0 @@
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator {
-    background-color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-}

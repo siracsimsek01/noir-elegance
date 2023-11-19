@@ -1,4 +1,4 @@
-Certainly! Below is a template for a `README.md` file that you could use for your full-stack application. You can modify it to fit the specifics of your project:
+
 
 ```markdown
 # Full-Stack MERN Application
@@ -9,7 +9,6 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 
 Before running this application, make sure you have the following installed:
 - Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
-- MongoDB - [Download & Install MongoDB](https://www.mongodb.com/try/download/community), and make sure it's running on the default port (27017).
 
 ## Installation
 
@@ -17,7 +16,7 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/your-repository/your-project.git
-cd your-project
+cd noir-elegance
 ```
 
 ### Backend Setup
@@ -44,6 +43,7 @@ Navigate to the client directory from the root of the project and install the de
 ```bash
 cd ../client
 npm install
+npm run build
 ```
 
 Start the React development server:
@@ -56,42 +56,26 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 ## Usage
 
-With both the frontend and backend servers running, open your web browser to [http://localhost:3000](http://localhost:3000). Fill out the form and submit it. The data will be sent to the backend server and stored in MongoDB.
+With both the frontend and backend servers running, open your web browser to [http://localhost:3000]. Fill out the form and submit it. The data will be sent to the backend server and stored in MongoDB.
 
-## Viewing Data in MongoDB
+## Connecting to the MongoDB Database
 
-To view the data in your MongoDB database, you can use the MongoDB Shell or a GUI like MongoDB Compass.
+If you have been granted access to the MongoDB database for this project, you can connect to it using the MongoDB extension in Visual Studio Code. Here's how to set it up:
 
-### Using MongoDB Shell
+### Prerequisites
 
-Open a terminal window and enter the following:
+- **Visual Studio Code**: Ensure you have [Visual Studio Code](https://code.visualstudio.com/download) installed.
+- **MongoDB Extension**: Install the [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) extension from the Visual Studio Code marketplace.
 
-```bash
-mongo
-```
+### Steps to Connect
 
-This will start the MongoDB shell connected to your local database. To find and display the data in the collection where your form data is stored, use:
+1. **Open the MongoDB Extension**: In VS Code, open the MongoDB extension. You can find it on the sidebar or by searching for "MongoDB" in the extensions view.
 
-```bash
-use yourDatabaseName
-db.yourCollectionName.find().pretty()
-```
+2. **Add a New Connection**: Click on "Add Connection" or the "+" icon in the MongoDB extension view. Enter the MongoDB URI provided to you. The format typically looks like this:
 
-Replace `yourDatabaseName` and `yourCollectionName` with the actual names you've used in your application.
+The MongoDB URI: mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/?retryWrites=true&w=majority
 
-### Using MongoDB Compass
 
-1. Open MongoDB Compass.
-2. Connect to your local MongoDB instance with the connection string: `mongodb://localhost:27017`.
-3. Navigate to the database and collection where your data is stored.
-
-## Additional Scripts
-
-In the project directory, you can run:
-
-### `npm run build`
-
-Builds the app for production to the `build` folder in the client directory. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Contributing
 
@@ -109,9 +93,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [your-email@example.com](mailto:your-email@example.com)
+Your Name - [siracsimsek01l@gmail.com](mailto:siracsismek01@gmail.com)
 
-Project Link: [https://github.com/your-repository/your-project](https://github.com/your-repository/your-project)
+Project Link: [https://github.com/siracsimsek01/noir-elegance](https://github.com/https://github.com/siracsimsek01/noir-elegance)
 ```
-
-Make sure to replace all placeholder URLs and text with the actual data relevant to your project. This `README.md` should be placed in the root of your project directory.

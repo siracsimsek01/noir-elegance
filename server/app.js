@@ -1,39 +1,33 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const bodyParser = require('body-parser');
+const Reservation = require('./models/Reservation'); // Make sure the path is correct
 
 const app = express();
 
-//Middlewares for parsing jSON and handling cors
+// Connect to MongoDB
+const mongoURI = "mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error(err));
 
-app.use(express.json());
 app.use(cors());
+app.use(bodyParser.json());
 
-mongoose.connect('your-mongodb-connection-string', {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => console.log('MongoDB connected'))
-    .catch(err => console.error(err));
+// Reservation route
+app.post('/api/reserve', async (req, res) => {
+  try {
+    const newReservation = new Reservation(req.body);
+    const savedReservation = await newReservation.save();
+    res.status(201).json(savedReservation);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
-
- //setting up route 
- 
- const indexRouter = require('./routes/index');
- app.use('/', indexRouter);
-
- //catch 404 and forward to error handler
-
- app.use(function(req, res, next) {
-    next(createError(404));
-  });
-  
-  // Error handler
-  app.use(function(err, req, res, next) {
-    // Set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-  
-    // Render the error page
-    res.status(err.status || 500);
-    res.render('error');
-  });
-  
-  module.exports = app;
+// Start the server
+const PORT = process.env.PORT || 5050;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

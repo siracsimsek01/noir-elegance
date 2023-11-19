@@ -1,9 +1,53 @@
 import React, {useEffect, useState} from "react";
 import "./Reserve.css";
 import { Reservation1 } from "../../assets/img/index";
-import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal"; 
 
 export default function Reserve() {
+   // State to store form data
+   const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    persons: '',
+    time: '',
+    date: new Date().toISOString().slice(0, 10), // default to today's date
+  });
+
+  // Updates state when form input changes
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    // Send formData to server
+    try {
+      const response = await fetch('http://localhost:5050/api/reserve', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Failed to send reservation:", error);
+    }
+  };
+
+  // ScrollReveal effect
   useEffect(() => {
     ScrollReveal().reveal("#reserveDiv", {
       delay: 500,
@@ -13,7 +57,10 @@ export default function Reserve() {
       interval: 100,
       reset: false,
     });
-  });
+  }, []);
+  
+
+  
 
   return (
     <>
@@ -36,15 +83,22 @@ export default function Reserve() {
           </div>
 
           <div className="w-full">
+            <form onSubmit={handleSubmit} name="reserve">
             <div className="flex justify-center gap-4 mb-4">
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Name"
                 required
                 className="bg-transparent border border-white text-white py-3 px-4 w-full max-w-xs outline-none"
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Email"
                 required
                 className="bg-transparent border border-white text-white py-3 px-4 w-full max-w-xs outline-none"
@@ -54,6 +108,9 @@ export default function Reserve() {
               <input
                 type="number"
                 min={1}
+                value={formData.persons}
+                onChange={handleChange}
+                name="persons"
                 color="white"
                 required
                 placeholder="Person"
@@ -61,23 +118,30 @@ export default function Reserve() {
               />
               <input
                 type="time"
+                name="time"
+                value={formData.time}
+                onChange={handleChange}
                 placeholder="Timing"
                 required
                 className="bg-transparent border border-white text-white py-3 px-4 w-full max-w-xs outline-none"
               />
               <input
                 type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
                 placeholder="Date"
                 required
-                value={new Date().toISOString().slice(0, 10)}
                 className="bg-transparent border border-white text-white py-3 px-4 w-full max-w-xs outline-none"
               />
             </div>
-          </div>
-
-          <button className="mt-8 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75">
+            <button type="submit" className="mt-8  bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75">
             Book a Table
           </button>
+            </form>
+          </div>
+
+        
         </div>
       </div>
     </>

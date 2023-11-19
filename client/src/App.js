@@ -14,6 +14,7 @@ import {
 import ScrollReveal from 'scrollreveal';
 
 const App = () => {
+  
   useEffect(() =>{
     ScrollReveal().reveal('#headerTitle', {
       delay: 500,

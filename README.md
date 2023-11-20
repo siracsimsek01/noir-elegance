@@ -96,4 +96,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Sirac Simsek - [siracsimsek01l@gmail.com](mailto:siracsismek01@gmail.com)
 
 Project Link: [https://github.com/siracsimsek01/noir-elegance](https://github.com/https://github.com/siracsimsek01/noir-elegance)
-```

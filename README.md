@@ -14,7 +14,7 @@ Before running this application, make sure you have the following installed:
 
 Clone the repository to your local machine:
 
-```bash
+```
 git clone https://github.com/your-repository/your-project.git
 cd noir-elegance
 ```
@@ -23,14 +23,14 @@ cd noir-elegance
 
 Navigate to the server directory and install the dependencies:
 
-```bash
+```
 cd server
 npm install
 ```
 
 Start the backend server:
 
-```bash
+```
 npm start
 ```
 
@@ -40,7 +40,7 @@ The server should now be running on [http://localhost:5000](http://localhost:505
 
 Navigate to the client directory from the root of the project and install the dependencies:
 
-```bash
+```
 cd ../client
 npm install
 npm run build
@@ -48,7 +48,7 @@ npm run build
 
 Start the React development server:
 
-```bash
+```
 npm start
 ```
 

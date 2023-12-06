@@ -11,40 +11,12 @@ import {main2,
     main11,
     main12,} from "../../assets/img/index";
 import { MenuItem, Button } from "../index";
-import ScrollReveal from "scrollreveal";
+
 
 export default function MenuView() {
-  useEffect(() => {
-    ScrollReveal().reveal("#menuView1", {
-      delay: 500,
-      duration: 1000,
-      origin: "bottom",
-      distance: "80px",
-      interval: 100,
-    });
-    ScrollReveal().reveal("#starters", {
-      delay: 500,
-      duration: 1000,
-      origin: "top",
-      distance: "100px",
-      interval: 100,
-    });
-    ScrollReveal().reveal("#mainDish", {
-      delay: 1000,
-      duration: 1000,
-      origin: "top",
-      distance: "50px",
-      interval: 100,
-    });
-    ScrollReveal().reveal("#dessert", {
-      delay: 1000,
-      duration: 1000,
-      origin: "top",
-      distance: "50px",
-      interval: 100,
-    });
+ 
   
-  })
+
     return(
 
         <div className="flex justify-around items-center px-40 font-body pt-32 pb-40 bg-white">

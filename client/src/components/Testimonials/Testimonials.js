@@ -13,27 +13,9 @@ import {
   TestimonialsImg,
 } from "../../assets/img/index";
 import "./Testimonials.css";
-import ScrollReveal from "scrollreveal";
+
 
 export default function Testimonials() {
-  useEffect(() => {
-    ScrollReveal().reveal("#testimonialsText", {
-      delay: 500,
-      duration: 1000,
-      origin: "top",
-      distance: "50px",
-      interval: 100,
-      reset: false,
-    });
-    ScrollReveal().reveal("#testimonialsImg", {
-      delay: 500,
-      duration: 1000,
-      origin: "bottom",
-      distance: "50px",
-      interval: 100,
-      reset: false,
-    });
-  });
 
   let settings = {
     dots: true,

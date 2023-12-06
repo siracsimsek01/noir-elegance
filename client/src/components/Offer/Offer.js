@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import {
   offer1,
   offer2,
@@ -13,74 +13,8 @@ import {
   blog2,
 } from "../../assets/img/index";
 import Button from "../Buttons/NoirButton";
-import ScrollReveal from "scrollreveal";
 
 export default function Offer() {
-  useEffect(() => {
-    ScrollReveal().reveal('#offerTitle',{
-      delay: 500,
-      duration: 1000,
-      origin: 'top',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#offerLeft',{
-      delay: 500,
-      duration: 1000,
-      origin: 'left',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#offerRight',{
-      delay: 500,
-      duration: 1000,
-      origin: 'right',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#menuTitle',{
-      delay: 500,
-      duration: 1000,
-      origin: 'top',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#menuItem',{
-      delay: 500,
-      duration: 1000,
-      origin: 'bottom',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#servicesTitle',{
-      delay: 500,
-      duration: 1000,
-      origin: 'top',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#servicesItem',{
-      delay: 500,
-      duration: 1000,
-      origin: 'bottom',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#blogTitle',{
-      delay: 500,
-      duration: 1000,
-      origin: 'top',
-      distance: '50px',
-      interval: 100
-    })
-    ScrollReveal().reveal('#blogItem',{
-      delay: 500,
-      duration: 1000,
-      origin: 'bottom',
-      distance: '50px',
-      interval: 100
-    })
-  })
   return (
     <>
       <div className="h-screen bg-white text-gray-800 text-base font-body pt-44">
@@ -98,7 +32,7 @@ export default function Offer() {
         </div>
 
         <div className="flex justify-center gap-8 items-center pt-8">
-          <img src={offer1} alt="offer1"  id="offerLeft"/>
+          <img src={offer1} alt="offer1" id="offerLeft" />
           <img src={offer2} alt="offer2" id="offerRight" />
         </div>
       </div>
@@ -128,10 +62,10 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-        
-          <p className="w-80 text-neutral-600 text-xl font-normal">
-            Lorem Ipsum is that it has a more-or-less normal
-          </p>
+
+            <p className="w-80 text-neutral-600 text-xl font-normal">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
         </div>
 
@@ -144,10 +78,10 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-         
-          <p className="w-80">
-            Lorem Ipsum is that it has a more-or-less normal
-          </p>
+
+            <p className="w-80">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
         </div>
 
@@ -160,10 +94,10 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-          
-          <p className="w-80">
-            Lorem Ipsum is that it has a more-or-less normal
-          </p>
+
+            <p className="w-80">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
         </div>
 
@@ -176,10 +110,10 @@ export default function Offer() {
               </h2>
               <p className="text-gray-800 text-2xl font-bold ">$15</p>
             </span>
-          
-          <p className="w-80">
-            Lorem Ipsum is that it has a more-or-less normal
-          </p>
+
+            <p className="w-80">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
         </div>
       </div>
@@ -284,9 +218,6 @@ export default function Offer() {
           </div>
         </div>
       </div>
-
-
-  
     </>
   );
 }

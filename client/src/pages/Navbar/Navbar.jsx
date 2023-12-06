@@ -7,28 +7,15 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
-import ScrollReveal from 'scrollreveal';
+import { motion } from "framer-motion";
 
 const Navbar = ({ showHeader, HeaderContent }) => {
-  useEffect(() =>{
-    ScrollReveal().reveal('#navbar', {
-      delay: 500,
-      duration: 2000,
-      origin: 'top',
-      distance: '300px',
-      interval: 500,
-      reset: false,
-    });
 
-    ScrollReveal().reveal('#navbarLink', {
-      delay: 500,
-      duration: 3000,
-      origin: 'left',
-      distance: '300px',
-      interval: 500,
-      reset: false,
-    });
-  })
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
+  
 
   return (
     <>

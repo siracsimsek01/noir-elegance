@@ -1,4 +1,3 @@
-export { default as About } from "../pages/About/About"
 export { default as Reservation } from "../pages/Reservation/Reservation"
 export { default as Chefs } from "../pages/Chefs/Chefs"
 export { default as Footer } from "../pages/Footer/Footer"

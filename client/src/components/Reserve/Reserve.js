@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./Reserve.css";
 import { Reservation1 } from "../../assets/img/index";
-import ScrollReveal from "scrollreveal"; 
+
 
 export default function Reserve() {
    // State to store form data
@@ -12,6 +12,9 @@ export default function Reserve() {
     time: '',
     date: new Date().toISOString().slice(0, 10), // default to today's date
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionMessage, setSubmissionMessage] = useState('');
 
   // Updates state when form input changes
   const handleChange = (event) => {
@@ -25,8 +28,9 @@ export default function Reserve() {
   // Handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
-    // Send formData to server
+    setIsSubmitting(true); // Disable the submit button
+    setSubmissionMessage(''); // Clear any previous messages
+
     try {
       const response = await fetch('http://localhost:5050/api/reserve', {
         method: 'POST',
@@ -35,30 +39,20 @@ export default function Reserve() {
         },
         body: JSON.stringify(formData),
       });
-  
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-  
+
       const data = await response.json();
-      console.log(data);
+      if (response.ok) {
+        setSubmissionMessage('Your reservation has been created.'); // Set success message
+        // Optionally, redirect to a success page or update the UI further
+      } else {
+        throw new Error(data.message || 'Failed to book the table.');
+      }
     } catch (error) {
-      console.error("Failed to send reservation:", error);
+      setSubmissionMessage(`Error: ${error.message}`); // Set error message
+    } finally {
+      setIsSubmitting(true); // Re-enable the submit button after the operation
     }
   };
-
-  // ScrollReveal effect
-  useEffect(() => {
-    ScrollReveal().reveal("#reserveDiv", {
-      delay: 500,
-      duration: 1000,
-      origin: "top",
-      distance: "50px",
-      interval: 100,
-      reset: false,
-    });
-  }, []);
-  
 
   
 
@@ -135,10 +129,21 @@ export default function Reserve() {
                 className="bg-transparent border border-white text-white py-3 px-4 w-full max-w-xs outline-none"
               />
             </div>
-            <button type="submit" className="mt-8  bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75">
-            Book a Table
+            <button type="submit" disabled={isSubmitting} className="
+              mt-8  bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75">
+            Book a table
+
+          
           </button>
             </form>
+
+            {submissionMessage && (
+                <div className="text-center mt-8">
+                <p className={submissionMessage.startsWith('Error:') ? 'text-red-600' : 'text-green-600 font-bold'}>
+                  {submissionMessage}
+                </p>
+              </div>
+            )}
           </div>
 
         

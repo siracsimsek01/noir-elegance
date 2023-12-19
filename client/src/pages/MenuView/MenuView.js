@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {main2,
     main3,
     main4,
@@ -10,17 +10,16 @@ import {main2,
     main10,
     main11,
     main12,} from "../../assets/img/index";
-import { MenuItem, Button } from "../index";
+import { MenuItem, Button } from "../../components/index";
 
 
 export default function MenuView() {
  
   
-
     return(
 
         <div className="flex justify-around items-center px-40 font-body pt-32 pb-40 bg-white">
-          <div id="menuView1">
+          <div>
             <h3 className="text-gray-800 text-base font-medium uppercase pb-3">
               Menu
             </h3>
@@ -76,7 +75,7 @@ export default function MenuView() {
                 />
               </div>
 
-              <div id="mainDish">
+              <div>
                 <h2 className="text-gray-800 text-3xl font-bold mb-5">
                   Main Dish
                 </h2>
@@ -112,7 +111,7 @@ export default function MenuView() {
                   price="$25"
                 />
               </div>
-              <div id="dessert">
+              <div>
                 <h2 className="text-gray-800 text-3xl font-bold mb-5">
                   Dessert
                 </h2>

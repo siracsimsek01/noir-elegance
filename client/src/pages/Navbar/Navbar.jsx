@@ -1,26 +1,29 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Button from "../../components/Buttons/NoirButton";
 import logo from "../../assets/img/logo.png";
+import { Link } from "react-router-dom";
 import {
   AiOutlineShoppingCart,
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
-import { motion } from "framer-motion";
+
+
 
 const Navbar = ({ showHeader, HeaderContent }) => {
-
   const variants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1 }
+    visible: { opacity: 1 },
   };
-  
+
 
   return (
     <>
-
-      <div id="navbar" className="bg-blackPrimary w-full pt-16 h-auto flex justify-around items-center pb-16">
+      <div
+        id="navbar"
+        className="bg-blackPrimary w-full pt-16 h-auto flex justify-around items-center pb-16"
+      >
         <div className="text-white">
           <Button type="primary">
             {" "}
@@ -44,61 +47,57 @@ const Navbar = ({ showHeader, HeaderContent }) => {
         </div>
       </div>
 
-
-
-
- 
       <div className="bg-blackPrimary" id="navbarLink">
         <hr className="border-gray-600" />
         <div className="inline-flex justify-around items-center w-full py-7 font-body">
           <ul className="flex gap-10 text-neutral-200 text-lg ">
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/About"
+              <Link
+                to="/Header"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/Menu"
+              <Link
+                to="/Menu"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Menu
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/Reservation"
+              <Link
+                to="/Reservation"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Reservation
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/Gallery"
+              <Link
+                to="/Chefs"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
-                Gallery{" "}
-              </a>
+                Chefs
+              </Link>
             </li>
             <li>
-              <a
-                href="/Contact"
+              <Link
+                to="/Footer"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -133,7 +132,6 @@ const Navbar = ({ showHeader, HeaderContent }) => {
         </div>
         <hr className="border-gray-600" />
       </div>
-  
 
       {showHeader && HeaderContent && (
         <div className="bg-blackPrimary h-64">

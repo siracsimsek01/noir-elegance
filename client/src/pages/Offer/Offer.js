@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   offer1,
   offer2,
@@ -12,7 +12,7 @@ import {
   blog1,
   blog2,
 } from "../../assets/img/index";
-import Button from "../Buttons/NoirButton";
+import Button from "../../components/Buttons/NoirButton";
 
 export default function Offer() {
   return (

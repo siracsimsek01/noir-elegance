@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bea31ba1.css",
-    "main.js": "/static/js/main.3aab1c41.js",
+    "main.css": "/static/css/main.9a43b715.css",
+    "main.js": "/static/js/main.f5617d9f.js",
     "static/media/Reservation1.jpg": "/static/media/Reservation1.dba81079444018329055.jpg",
     "static/media/Testimonials6.jpg": "/static/media/Testimonials6.5d4c62408792e90b5b0e.jpg",
     "static/media/TestimonialsImg.png": "/static/media/TestimonialsImg.e487050e3dc2f28a3d51.png",
@@ -37,11 +37,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.bea31ba1.css.map": "/static/css/main.bea31ba1.css.map",
-    "main.3aab1c41.js.map": "/static/js/main.3aab1c41.js.map"
+    "main.9a43b715.css.map": "/static/css/main.9a43b715.css.map",
+    "main.f5617d9f.js.map": "/static/js/main.f5617d9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.bea31ba1.css",
-    "static/js/main.3aab1c41.js"
+    "static/css/main.9a43b715.css",
+    "static/js/main.f5617d9f.js"
   ]
 }

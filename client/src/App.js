@@ -1,27 +1,32 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar, Header, MenuView, Footer } from "./pages/index";
-import { Offer, Reserve, Testimonials } from "./components/index";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { Navbar, Home } from "../src/pages/index";
+import { About, Menu, Chefs, Footer } from "../src/pages/index";
+import { Reserve } from "../src/components/index";
 
 const App = () => {
   return (
     <div className="App">
       <ParallaxProvider>
-        {/* Navbar Component @/src/pages/Navbar/Navbar */}
-        <Navbar showHeader={false} />
-        {/* Header of main page */}
-        <Header />
+        <Router>
+          {/* Navbar Component @/src/pages/Navbar/Navbar */}
+          {/* <Navbar showHeader={false} /> */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/reserve" element={<Reserve />} />
+            <Route path="/chefs" element={<Chefs />} />
+            <Route path="/contact" element={<Footer />} />
+          </Routes>
 
-        {/* Main part of main page */}
-        
-          <MenuView />
-          <Testimonials />
-          <Offer />
-          <Reserve />
-          
-          {/* <Footer /> */}
-        <Footer />
+
+          <Home/>
+
+          {/* Main part of main page */}
+        </Router>
       </ParallaxProvider>
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Home, About, Menu, Chefs } from "./pages/index";
 import { Reserve } from "./components/index";
+import "./App.css";
 
 const App = () => {
   const location = useLocation();

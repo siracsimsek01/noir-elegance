@@ -19,7 +19,7 @@ const Home = () => {
        <Header />
          {/* Main part of main page */}
 
-         <MenuView />
+          <MenuView />
           <Testimonials />
           <Offer />
           <Reserve />

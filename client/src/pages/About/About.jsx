@@ -1,4 +1,5 @@
 import React from 'react'
+import Transition from '../../transition'
 
 const About = () => {
   return (
@@ -6,4 +7,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Transition(About)

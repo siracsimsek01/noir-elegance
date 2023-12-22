@@ -8,6 +8,7 @@ import {
     Footer,
   } from "../index";
   import { Reserve } from "../../components/index";
+  import Transition from '../../transition';
 
 const Home = () => {
   return (
@@ -22,10 +23,9 @@ const Home = () => {
           <Testimonials />
           <Offer />
           <Reserve />
-          {/* <Footer /> */}
           <Footer />
     </>
   )
 }
 
-export default Home
+export default Transition(Home)

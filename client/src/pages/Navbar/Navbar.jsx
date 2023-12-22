@@ -12,10 +12,10 @@ import { FaXTwitter, FaPinterest } from "react-icons/fa6";
 
 
 const Navbar = ({ showHeader, HeaderContent }) => {
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
+  // const variants = {
+  //   hidden: { opacity: 0 },
+  //   visible: { opacity: 1 },
+  // };
 
 
   return (
@@ -61,7 +61,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/Header"
+                to="/about"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 About
@@ -69,7 +69,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/Menu"
+                to="/menu"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Menu
@@ -77,7 +77,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/Reservation"
+                to="/reserve"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Reservation
@@ -85,7 +85,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/Chefs"
+                to="/chefs"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Chefs
@@ -93,7 +93,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/Footer"
+                to="/footer"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Contact

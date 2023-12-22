@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "../../components/index";
-import { headerImg } from "../../assets/img/index";
+import { headerImg, signature, main1 } from "../../assets/img/index";
 import { SlLocationPin } from "react-icons/sl";
 import { AiOutlineBook, AiOutlineClockCircle } from "react-icons/ai";
-import { signature, main1 } from "../../assets/img/index";
+
 
 const Header = () => {
   const circle = (

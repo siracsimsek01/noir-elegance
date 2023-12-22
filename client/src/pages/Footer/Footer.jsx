@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../../assets/img/logo.png";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";

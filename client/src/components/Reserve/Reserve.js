@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Reserve.css";
 import { Reservation1 } from "../../assets/img/index";
+import Transition from "../../transition";      
 
-export default function Reserve() {
+const Reserve = () => {
   // State to store form data
   const [formData, setFormData] = useState({
     name: "",
@@ -158,3 +159,5 @@ export default function Reserve() {
     </>
   );
 }
+
+export default Transition(Reserve)

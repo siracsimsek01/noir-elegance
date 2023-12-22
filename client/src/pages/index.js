@@ -3,7 +3,7 @@ export { default as Chefs } from "../pages/Chefs/Chefs";
 export { default as Footer } from "../pages/Footer/Footer";
 export { default as Menu } from "../pages/Menu/Menu";
 export { default as Navbar } from "../pages/Navbar/Navbar";
-export { default as Header } from "../pages/Header/Header";
+export { default as Header } from "../../src/pages/Header/Header";
 export { default as MenuView } from "../pages/MenuView/MenuView";
 export { default as About } from "../pages/About/About";
 export { default as Testimonials } from "../pages/Testimonials/Testimonials";

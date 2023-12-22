@@ -1,11 +1,13 @@
 import React from 'react'
-import { Navbar } from '../Navbar/Navbar'
+import Transition from '../../transition'
 const Menu = () => {
   return (
-    <>
-    
+  <>
+    <div>
+      Welcome to Menu
+    </div>
     </>
   )
 }
 
-export default Menu
+export default Transition(Menu)

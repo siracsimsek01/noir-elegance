@@ -1,8 +1,0 @@
-{
-    "watch": ["server/**/*.js", "config/**/*.js"],
-    "ignore": ["node_modules/**/node_modules"],
-    "execMap": {
-      "js": "node --harmony"
-    }
-  }
-  

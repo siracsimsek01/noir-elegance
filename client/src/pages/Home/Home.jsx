@@ -23,6 +23,7 @@ const Home = () => {
           <Testimonials />
           <Offer />
           <Reserve />
+          {/* Footer */}
           <Footer />
     </>
   )

@@ -41,6 +41,20 @@ module.exports = {
         86: "21.5rem",
         110: "27.5rem",
         124: "31rem",
+        128: "32rem",
+        130: "33rem",
+        140: "35rem",
+        144: "36rem",
+      },
+
+      height: {
+        86: "21.5rem",
+        110: "27.5rem",
+        124: "31rem",
+        128: "32rem",
+        130: "33rem",
+        140: "35rem",
+        144: "36rem",
       },
 
       borderWidth: {
@@ -53,6 +67,7 @@ module.exports = {
         semibold: 600,
         bold: 700,
       },
+
     },
   },
 };

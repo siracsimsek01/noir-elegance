@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <div className="bg-blackPrimary flex justify-around items-center pt-20">
         <span className="text-white after:block after:w-28 after:bg-white after:h-0.5">
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
             Instagram Feed
           </a>
         </span>
@@ -19,17 +19,17 @@ const Footer = () => {
         </div>
 
         <ul className="inline-flex gap-4">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             <AiOutlineInstagram size={23} color="#fff" />
           </a>
-          <a href="https://www.facebook.com" target="_blank">
+          <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
             <AiOutlineFacebook
               className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"
               size={23}
               color="#fff"
             />
           </a>
-          <a href="https://www.twitter.com" target="_blank">
+          <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
             {" "}
             <FaXTwitter
               className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"
@@ -37,7 +37,7 @@ const Footer = () => {
               color="#fff"
             />
           </a>
-          <a href="https://www.pinterest.com" target="_blank">
+          <a href="https://www.pinterest.com" target="_blank" rel="noreferrer">
             {" "}
             <FaPinterest
               className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"

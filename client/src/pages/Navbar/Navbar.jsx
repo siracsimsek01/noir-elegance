@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import Button from "../../components/Buttons/NoirButton";
 import logo from "../../assets/img/logo.png";
@@ -18,6 +19,10 @@ const Navbar = ({ showHeader, HeaderContent }) => {
   // };
 
 
+
+  
+
+
   return (
     <>
       <div
@@ -26,10 +31,9 @@ const Navbar = ({ showHeader, HeaderContent }) => {
       >
         <div className="text-white">
           <Button type="primary">
-            {" "}
-            <a href="#" onClick={(e) => e.preventDefault}>
+            <button onClick={(e) => e.preventDefault()}>
               Call 987 654 321
-            </a>
+            </button>
           </Button>
         </div>
         <div className="w-1/4 h-auto">
@@ -102,17 +106,17 @@ const Navbar = ({ showHeader, HeaderContent }) => {
           </ul>
 
           <ul className="inline-flex gap-4">
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
               <AiOutlineInstagram size={23} color="#fff" />
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <AiOutlineFacebook
                 className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"
                 size={23}
                 color="#fff"
               />
             </a>
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
               {" "}
               <FaXTwitter
                 className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"
@@ -120,7 +124,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
                 color="#fff"
               />
             </a>
-            <a href="https://www.pinterest.com" target="_blank">
+            <a href="https://www.pinterest.com" target="_blank" rel="noreferrer">
               {" "}
               <FaPinterest
                 className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"

@@ -2,7 +2,7 @@ import React from 'react'
 
 const PrimaryButton = ({ onClick, disabled, children}) => {
     return (
-        <button  className='py-2 px-6 text-sm font-medium cursor-pointer border-2 border-darkYellow  hover:bg-darkYellow transition-all duration-500' onClick={onClick} disabled={disabled}>
+        <button  className='py-2 px-6 text-sm font-medium  text-darkYellow hover:text-black cursor-pointer border-2 border-darkYellow  hover:bg-darkYellow transition-all duration-500' onClick={onClick} disabled={disabled}>
             {children}
         </button>
     )

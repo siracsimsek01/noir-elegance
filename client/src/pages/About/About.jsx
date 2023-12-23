@@ -24,6 +24,7 @@ import {
 } from "../../assets/img/index";
 import Button from "../../components/Buttons/NoirButton";
 import AboutItem from "./AboutItem";
+import Reserve from "../../components/Reserve/Reserve";
 
 const About = () => {
   const line = <span className="border-r h-72 border-gray-500"></span>;
@@ -35,7 +36,7 @@ const About = () => {
       <div className="bg-white flex px-64 py-52 justify-center gap-48">
         <div className="">
           <div className="flex flex-col gap-5">
-            <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-3 tracking-widest">
+            <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-24 after:bg-darkYellow after:h-0.5">
               About Us
             </h2>
             <h1 className="text-gray-800 text-4xl font-bold font-body leading-loose">
@@ -69,7 +70,7 @@ const About = () => {
                 <img
                   src={Pattern}
                   alt="aboutPattern"
-                  className="absolute top-0 right-0"
+                  className="absolute top-0 right-0 opacity-50"
                   style={{ zIndex: 0 }}
                 />
               </div>
@@ -155,11 +156,12 @@ const About = () => {
       </div>
 
           <div className="bg-white h-screen py-48">
-            <div>
-              <h2 className="text-center text-gray-800 text-base font-medium font-['Josefin Sans'] uppercase leading-3 tracking-widest pb-3">TEAM</h2>
-              <h1 className="text-center text-gray-800 text-4xl font-bold font-body">Meet Our Professional Chefs</h1>
+            <div className="text-center text-gray-800">
+              <h2 className="inline-block text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-12 after: after:bg-darkYellow after:h-0.5 mb-4">TEAM</h2>
+              <h1 className=" text-4xl font-bold font-body">Meet Our Professional Chefs</h1>
             </div>
             <div className="flex justify-center items-center gap-4 pt-12">
+
               <AboutItem
                 type="Chefs"
                 image={Chef1}
@@ -183,6 +185,28 @@ const About = () => {
 
             </div>
           </div>
+
+          <div className="pt-10 h-screen pb-32">
+            <div className="text-center text-white font-body">
+              <h2 className="inline-block text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-20 after: after:bg-darkYellow after:h-0.5 mb-5">Gallery</h2>
+              <h1 className="text-4xl font-bold font-body">What We Make</h1>
+            </div>
+            <div className="pt-20 flex justify-center items-center gap-3">
+              <div>
+                <img src={AboutGallery1} alt="Gallery1" className="pb-4"/>
+                <img src={AboutGallery2} alt="Gallery2" />
+              </div>
+              <div>
+                <img src={AboutGallery3} alt="Gallery3" />
+              </div>
+              <div>
+                <img src={AboutGallery4} alt="Gallery4" className="pb-4"/>
+                <img src={AboutGallery5} alt="Gallery5" />
+              </div>
+            </div>
+
+          </div>
+      <Reserve/>
       <Footer />
     </>
   );

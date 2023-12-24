@@ -81,7 +81,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/reserve"
+                to="/booking"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Reservation

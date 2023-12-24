@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Home, About, Menu, Chefs } from "./pages/index";
-import { Reserve } from "./components/index";
+import { Home, About, Menu, Booking, Chefs } from "./pages/index";
 import "./App.css";
 
 const App = () => {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>
@@ -14,7 +17,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/chefs" element={<Chefs />} />
-        <Route path="/reserve" element={<Reserve />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </>
   );

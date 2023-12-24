@@ -60,3 +60,28 @@ export { default as Chef4} from './Chef-4.png';
 export { default as Pattern} from './About-Pattern.svg'
 export { default as AboutBg} from './About-bg.jpg'
 export { default as Star} from './Star.svg';
+
+export { default as Menu1} from './Menu-1.png';
+export { default as Menu2} from './Menu-2.png';
+export { default as Menu3} from './Menu-3.png';
+export { default as MenuBg} from './Menu-bg.png';
+export { default as MenuBg2} from './Menu-bg-2.png';
+export { default as ChickenFijita} from './ChickenFijita.jpg'
+export { default as ChickenNoodleSoup} from './ChickenNoodleSoup.jpg'
+export { default as ChickenWithMushroom} from './ChickenWithMushroom.jpg'
+export { default as ChineseSoup} from './ChineseSoup.jpg'
+export { default as ItalianPasta} from './ItalianPasta.jpg'
+export { default as BeefBurger} from './BeefBurger.jpg'
+export { default as RibeyeSteak} from './RibeyeSteak.jpg'
+export { default as ChickenWithKoriSauce} from './ChickenWithKoriSauce.jpg'
+export { default as OreoIceCream} from './OreoIceCream.jpg'
+export { default as Soufle} from './Soufle.jpg'
+export { default as StrawberryTart} from './StrawberryTart.jpg'
+export { default as Waffle} from './Waffle.jpg'
+
+export { default as Booking1} from './Booking1.png'
+export { default as Booking2} from './Booking2.png'
+export { default as BookingIcon1} from './BookingIcon1.svg'
+export { default as BookingIcon2} from './BookingIcon2.svg'
+export { default as BookingIcon3} from './BookingIcon3.svg'
+export { default as BookingIcon4} from './BookingIcon4.svg'

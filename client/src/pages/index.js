@@ -8,3 +8,4 @@ export { default as MenuView } from "../pages/MenuView/MenuView";
 export { default as About } from "../pages/About/About";
 export { default as Testimonials } from "../pages/Testimonials/Testimonials";
 export { default as Offer } from "../pages/Offer/Offer";
+export { default as Booking } from '../pages/Booking/Booking'

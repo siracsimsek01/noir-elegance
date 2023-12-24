@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <>
-      <Navbar showHeader={true} />
+      <Navbar showHeader={true} HeaderContent={"About Us"}/>
       <div className="bg-white flex px-64 py-52 justify-center gap-48">
         <div className="">
           <div className="flex flex-col gap-5">

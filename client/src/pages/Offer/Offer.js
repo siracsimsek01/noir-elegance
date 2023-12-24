@@ -13,6 +13,7 @@ import {
   blog2,
 } from "../../assets/img/index";
 import Button from "../../components/Buttons/NoirButton";
+import { Link } from "react-router-dom";
 
 export default function Offer() {
   return (
@@ -119,7 +120,9 @@ export default function Offer() {
       </div>
 
       <div className="text-center pt-10 pb-10 bg-white">
-        <Button type="primary">See all dishes</Button>
+        <Button type="primary">
+          <Link to="/menu">See all dishes</Link>
+        </Button>
       </div>
 
       <div className="bg-blackPrimary pt-32 h-screen px-80 flex items-center justify-around w-full">

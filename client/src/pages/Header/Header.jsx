@@ -3,7 +3,7 @@ import { Button } from "../../components/index";
 import { headerImg, signature, main1 } from "../../assets/img/index";
 import { SlLocationPin } from "react-icons/sl";
 import { AiOutlineBook, AiOutlineClockCircle } from "react-icons/ai";
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const circle = (
@@ -22,7 +22,11 @@ const Header = () => {
             Simply dummy text of the printing and typesetting industry. <br />{" "}
             Lorem Ipsum has been the industry's standard dummy .
           </p>
-          <Button type="primary">View Menu</Button>
+       
+
+          <Button type="primary">
+            <Link to="/menu">View Menu</Link>
+          </Button>
         </div>
 
         <div className="mt-8 backdrop-blur-3xl bg-white bg-opacity-10 rounded-tl-full rounded-tr-full w-96 h-96">

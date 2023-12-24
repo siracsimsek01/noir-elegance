@@ -11,7 +11,7 @@ import {main2,
     main11,
     main12,} from "../../assets/img/index";
 import { MenuItem, Button } from "../../components/index";
-
+import { Link } from 'react-router-dom'
 
 export default function MenuView() {
  
@@ -33,7 +33,9 @@ export default function MenuView() {
             </p>
             <img src={main2} alt="main2" className="mb-14" />
 
-            <Button type="primary">See all dishes</Button>
+            <Button type="primary">
+            <Link to="/menu">See all dishes</Link>
+          </Button>
           </div>
           <div>
             <div className="flex flex-col gap-4 justify-end items-center mt-52">

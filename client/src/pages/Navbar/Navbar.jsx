@@ -10,19 +10,7 @@ import {
 } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
 
-
-
 const Navbar = ({ showHeader, HeaderContent }) => {
-  // const variants = {
-  //   hidden: { opacity: 0 },
-  //   visible: { opacity: 1 },
-  // };
-
-
-
-  
-
-
   return (
     <>
       <div
@@ -106,7 +94,11 @@ const Navbar = ({ showHeader, HeaderContent }) => {
           </ul>
 
           <ul className="inline-flex gap-4">
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiOutlineInstagram size={23} color="#fff" />
             </a>
             <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
@@ -124,7 +116,11 @@ const Navbar = ({ showHeader, HeaderContent }) => {
                 color="#fff"
               />
             </a>
-            <a href="https://www.pinterest.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.pinterest.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               <FaPinterest
                 className="block cursor-pointer hover:text-neutral-600 transition-all duration-300"

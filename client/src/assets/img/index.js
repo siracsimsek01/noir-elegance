@@ -85,3 +85,7 @@ export { default as BookingIcon1} from './BookingIcon1.svg'
 export { default as BookingIcon2} from './BookingIcon2.svg'
 export { default as BookingIcon3} from './BookingIcon3.svg'
 export { default as BookingIcon4} from './BookingIcon4.svg'
+
+export { default as Chef5} from './Chef-5.png'
+export { default as Chef6} from './Chef-6.png'
+export { default as Chef7} from './Chef-7.jpg'

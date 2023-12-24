@@ -7,7 +7,7 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 500);
   }, [location]);
 
   return (

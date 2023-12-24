@@ -15,7 +15,7 @@ import {
 import "./Testimonials.css";
 
 
-export default function Testimonials() {
+export default function Testimonials({showBottom}) {
 
   let settings = {
     dots: true,
@@ -91,11 +91,13 @@ export default function Testimonials() {
             description="It the fusion cuisine here is second to none. I love how they blend different culinary traditions to create something uniquely delicious."
           />
         </Slider>
-
       </div>
+    {showBottom && (
         <div className="w-full bg-blackPrimary pt-10" id="testimonialsImg">
           <img src={TestimonialsImg} alt="TestimonialsImg" />
         </div>
+        )}
     </>
+    
   );
 }

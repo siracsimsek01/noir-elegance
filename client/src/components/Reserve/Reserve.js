@@ -69,7 +69,7 @@ const Reserve = () => {
           className="relative z-10 px-40 py-36 bg-blackPrimary bg-opacity-95 flex flex-col items-center gap-2.5"
         >
           <div className="text-center">
-            <h3 className="text-xl font-medium text-white uppercase mb-4 after:content-[''] after:block after:w-26 after:h-0.5 after:bg-yellow-400 after:mt-2">
+            <h3 className="text-xl font-medium text-white uppercase mb-4 after:content-[''] after:block after:w-86 after:h-0.5 after:bg-yellow-400 after:mt-2">
               Reservation
             </h3>
             <h1 className="text-4xl font-bold text-white mb-6">

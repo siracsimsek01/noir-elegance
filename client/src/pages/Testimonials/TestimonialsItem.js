@@ -6,7 +6,7 @@ export default function TestimonialsItem({ imgSrc, imgAlt, name, location, descr
      
     <div className="w-96 h-72 bg-blackLight px-12 py-14 relative" >
       <div className="inline-flex gap-6 ">
-        <div className="w-16 h-auto">
+        <div className="w-16 h-16">
         <img src={imgSrc} alt={imgAlt} className="rounded-full" />
         </div>
         <span >

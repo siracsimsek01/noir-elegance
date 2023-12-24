@@ -59,10 +59,19 @@ const Booking = () => {
       setIsSubmitting(true); // Re-enable the submit button after the operation
     }
   };
+
+  const iconBox = (icon, title) => {
+    return (
+      <div className="flex items-center gap-4 bg-white w-64 h-16 border-2 border-gray-200 p-10">
+          <img src={icon} alt="icon" />
+          <p>{title}</p>
+      </div>
+    );
+  };
   return (
     <>
       <Navbar showHeader={true} HeaderContent={"Booking Page"} />
-      <div className="bg-white h-screen font-body flex justify-around items-center">
+      <div className="bg-white h-screen font-body flex justify-evenly items-center">
         <div>
           <div>
             <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-30 after:bg-darkYellow after:h-0.5">
@@ -129,14 +138,14 @@ const Booking = () => {
               />
             </div>
             <div className="mt-10">
-            <Button
-            //   type="submit"
-              type="primary"
-              disabled={isSubmitting}
-              onSubmit={handleSubmit}
-            >
-              Book a table
-            </Button>
+              <Button
+                //   type="submit"
+                type="primary"
+                disabled={isSubmitting}
+                onSubmit={handleSubmit}
+              >
+                Book a table
+              </Button>
             </div>
           </form>
 
@@ -155,7 +164,36 @@ const Booking = () => {
           )}
         </div>
         <div>
-            <img src={Booking1} alt="Booking1" />
+          <img src={Booking1} alt="Booking1" />
+        </div>
+      </div>
+
+      <div className="bg-white h-screen font-body flex justify-evenly items-center">
+        <div>
+          <img src={Booking2} alt="Booking2" />
+        </div>
+        <div>
+          <div>
+            <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-38 after:bg-darkYellow after:h-0.5">WHY CHOOSE US</h2>
+            <h1 className="text-gray-800 text-4xl font-bold font-body leading-loose">Why We Are The Best?</h1>
+            <p className="w-124 text-neutral-600 text-xl font-normal font-body leading-relaxed">
+              Bring the table winwin survival strateges ensure proactive the
+              domination the end of the day going forward new normal that has
+              evolved froms generation on the runway heading towards streamlined
+              cloud solution generated content in real times will have multiple
+              touchpoints.
+            </p>
+          </div>
+          <div className="flex justify-evenly mt-16">
+            <span>
+               {iconBox(BookingIcon1, "Fresh Food")}
+               {iconBox(BookingIcon2, "Fast Delivery")}
+            </span>
+            <span>
+                {iconBox(BookingIcon3, "Quality Maintain")}
+                {iconBox(BookingIcon4, "24/7 Service")}
+            </span>
+          </div>
         </div>
       </div>
       <Footer />

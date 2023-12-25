@@ -9,6 +9,7 @@ import {
   BookingIcon3,
   BookingIcon4,
 } from "../../assets/img/index";
+import Transition from "../../transition";
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -201,4 +202,4 @@ const Booking = () => {
   );
 };
 
-export default Booking;
+export default Transition(Booking);

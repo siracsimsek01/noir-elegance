@@ -23,8 +23,9 @@ export default function ProgressBar({ label, percentage }) {
     color: 'black', 
     fontWeight: 'bold',
     position: 'absolute', // Adjusted to position the label
-    top: '-25px', // Position from top
+    top: '-45px', // Position from top
     left: '10px', // Position from left
+    fontSize: '1.5rem', // Adjusted to fit
   };
 
   return (

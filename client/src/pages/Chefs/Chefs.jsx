@@ -16,6 +16,7 @@ import {
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import { Button } from "../../components/index";
 import { Link } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 
 const Chefs = () => {
   return (
@@ -24,14 +25,17 @@ const Chefs = () => {
 
       <div className="bg-white  h-fit py-48">
         <div className="text-center text-gray-800">
+          <Fade cascade>
           <h2 className="inline-block text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-12 after: after:bg-darkYellow after:h-0.5 mb-4">
             TEAM
           </h2>
           <h1 className=" text-4xl font-bold font-body">
             Meet Our Professional Chefs
           </h1>
+          </Fade>
         </div>
         <div className="flex justify-center items-center flex-wrap gap-4 pt-12 px-56">
+          <Fade cascade direction="up" damping={0.5} delay={500} triggerOnce>
           <AboutItem
             type="Chefs"
             image={Chef1}
@@ -69,6 +73,7 @@ const Chefs = () => {
             title={"Jensen Yong"}
             description={"Senior Chef"}
           />
+          </Fade>
         </div>
       </div>
       <Testimonials showBottom={false}/>
@@ -76,27 +81,33 @@ const Chefs = () => {
       <div className="bg-white h-screen flex justify-evenly items-center font-body">
         <div>
           <div>
+            <Fade cascade>
             <h2 className="inline-block text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-26 after: after:bg-darkYellow after:h-0.5 mb-4">BEST CHEFS</h2>
             <h1 className="text-gray-800 text-4xl font-bold font-body leading-loose">Only Skilled Team</h1>
             <p className="w-124 text-neutral-600 text-xl font-normal font-body leading-relaxed">Bring tothe table survival strategies to ensured proactived domination At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined  touchpoints for offshoring.</p>
+            </Fade>
           </div>
           <div className="flex flex-col justify-evenly items-center h-96">
+            <Fade cascade damping={0.5} delay={1500} triggerOnce>
           <ProgressBar label={"Experienced"} percentage={90}/>
           <ProgressBar label={"Proffessionalism"} percentage={70}/>
           <ProgressBar label={"Creative"} percentage={80}/>
+          </Fade>
           </div>
 
-        
+          <Fade direction="up" delay={2000} triggerOnce>
           <Button type="primary">
             <Link to="/menu">See all dishes</Link>
           </Button>
+          </Fade>
 
           
         </div>
-
+        <Fade direction="right" triggerOnce>
         <div>
           <img src={Chef7} alt="Chef7" />
         </div>
+        </Fade>
       </div>
 
 

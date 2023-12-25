@@ -10,6 +10,7 @@ import {
   BookingIcon4,
 } from "../../assets/img/index";
 import Transition from "../../transition";
+import { Fade } from "react-awesome-reveal";
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -75,6 +76,7 @@ const Booking = () => {
       <div className="bg-white h-screen font-body flex justify-evenly items-center overflow-hidden">
         <div>
           <div>
+            <Fade cascade>
             <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-30 after:bg-darkYellow after:h-0.5">
               Reservation
             </h2>
@@ -85,9 +87,12 @@ const Booking = () => {
               The people, food and the prime locations make Rodich the perfect
               place good friends & family to come together and have great time.
             </p>
+            </Fade>
           </div>
+          <Fade cascade damping={0.5} delay={1200}>
           <form onSubmit={handleSubmit} name="reserve">
             <div className="flex justify-center gap-4 mb-4 pt-10">
+     
               <input
                 type="text"
                 name="name"
@@ -137,6 +142,7 @@ const Booking = () => {
                 required
                 className="bg-transparent border border-black text-black py-3 px-4 w-full max-w-xs outline-none"
               />
+          
             </div>
             <div className="mt-10">
               <Button
@@ -149,7 +155,7 @@ const Booking = () => {
               </Button>
             </div>
           </form>
-
+          </Fade>
           {submissionMessage && (
             <div className="text-center mt-8">
               <p
@@ -164,17 +170,22 @@ const Booking = () => {
             </div>
           )}
         </div>
+        <Fade direction="right" delay={1500} triggerOnce>
         <div>
           <img src={Booking1} alt="Booking1" />
         </div>
+        </Fade>
       </div>
 
       <div className="bg-white h-screen font-body flex justify-evenly items-center">
+        <Fade direction="left" triggerOnce>
         <div>
           <img src={Booking2} alt="Booking2" />
         </div>
+        </Fade>
         <div>
           <div>
+            <Fade cascade>
             <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-38 after:bg-darkYellow after:h-0.5">WHY CHOOSE US</h2>
             <h1 className="text-gray-800 text-4xl font-bold font-body leading-loose">Why We Are The Best?</h1>
             <p className="w-124 text-neutral-600 text-xl font-normal font-body leading-relaxed">
@@ -184,7 +195,9 @@ const Booking = () => {
               cloud solution generated content in real times will have multiple
               touchpoints.
             </p>
+            </Fade>
           </div>
+          <Fade cascade damping={0.5} delay={1500}>
           <div className="flex justify-evenly mt-16">
             <span>
                {iconBox(BookingIcon1, "Fresh Food")}
@@ -195,6 +208,7 @@ const Booking = () => {
                 {iconBox(BookingIcon4, "24/7 Service")}
             </span>
           </div>
+          </Fade>
         </div>
       </div>
       <Footer />

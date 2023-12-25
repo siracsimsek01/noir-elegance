@@ -2,11 +2,13 @@ import React from "react";
 import logo from "../../assets/img/logo.png";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
+import { Fade } from "react-awesome-reveal";
 
 
 const Footer = () => {
   return (
     <>
+      <Fade direction="up" triggerOnce>
       <div className="bg-blackPrimary flex justify-around items-center pt-20">
         <span className="text-white after:block after:w-28 after:bg-white after:h-0.5">
           <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
@@ -80,6 +82,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
+      </Fade>
       <div className="bg-blackPrimary">
         <hr className="border-gray-600"/>
         <p className="py-9 text-white text-center">

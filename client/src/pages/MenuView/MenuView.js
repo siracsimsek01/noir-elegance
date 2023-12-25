@@ -42,7 +42,7 @@ export default function MenuView() {
           </Fade>
           <div>
             <div className="flex flex-col gap-4 justify-end items-center mt-52">
-              <Fade direction="top" triggerOnce>
+              <Fade direction="right" triggerOnce>
               <div id="starters">
                 <h2 className="text-gray-800 text-3xl font-bold mb-5" >
                   Starters
@@ -81,7 +81,7 @@ export default function MenuView() {
                 />
               </div>
              </Fade>
-             <Fade direction="top" triggerOnce>
+             <Fade direction="right" triggerOnce>
               <div>
                 <h2 className="text-gray-800 text-3xl font-bold mb-5">
                   Main Dish
@@ -119,7 +119,7 @@ export default function MenuView() {
                 />
               </div>
               </Fade>
-              <Fade direction="top" triggerOnce>
+              <Fade direction="right" triggerOnce>
               <div>
                 <h2 className="text-gray-800 text-3xl font-bold mb-5">
                   Dessert

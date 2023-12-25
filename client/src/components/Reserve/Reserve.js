@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Reserve.css";
 import { Reservation1 } from "../../assets/img/index";
 // import Transition from "../../transition";      
+import { Fade } from "react-awesome-reveal";
 
 const Reserve = () => {
   // State to store form data
@@ -64,6 +65,7 @@ const Reserve = () => {
           backgroundPosition: "center",
         }}
       >
+        <Fade direction="top" triggerOnce>
         <div
           id="reserveDiv"
           className="relative z-10 px-40 py-36 bg-blackPrimary bg-opacity-95 flex flex-col items-center gap-2.5"
@@ -160,6 +162,7 @@ const Reserve = () => {
             )}
           </div>
         </div>
+        </Fade>
       </div>
     </>
   );

@@ -8,14 +8,16 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 500);
+      if (location.pathname !== "/") {
+        window.scrollTo(0, 500);
+      }
   }, [location]);
 
   return (
     <>
       <ParallaxProvider>
       <Routes location={location} key={location.pathname}>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/chefs" element={<Chefs />} />

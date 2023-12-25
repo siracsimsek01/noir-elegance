@@ -30,7 +30,7 @@ import {
   Waffle,
 } from "../../assets/img/index";
 import { Fade } from 'react-awesome-reveal';
-import { FaD } from "react-icons/fa6";
+
 
 const Menu = () => {
   return (

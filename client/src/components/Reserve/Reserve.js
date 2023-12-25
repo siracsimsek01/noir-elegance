@@ -130,11 +130,16 @@ const Reserve = () => {
                   className="bg-transparent border border-white text-white py-3 px-4 w-full max-w-xs outline-none"
                 />
               </div>
+              
               <button
                 type="submit"
                 disabled={isSubmitting}
+                onClick={() => {
+                  handleSubmit();
+                  setIsSubmitting(true);
+                }}
                 className="
-              mt-8  bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75"
+                  mt-8  bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75 cursor-pointer"
               >
                 Book a table
               </button>

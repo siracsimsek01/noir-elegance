@@ -13,6 +13,7 @@ import {
   TestimonialsImg,
 } from "../../assets/img/index";
 import "./Testimonials.css";
+import { Fade } from "react-awesome-reveal";
 
 
 export default function Testimonials({showBottom}) {
@@ -31,7 +32,9 @@ export default function Testimonials({showBottom}) {
   return (
     <>
       <div className="bg-blackPrimary pb-32 text-white font-body pl-64 pt-28">
+    
         <div className="mb-14" id="testimonialsText">
+        <Fade cascade>
           <h2 className="text-base font-medium after:block after:w-20 after:bg-darkYellow after:h-0.5 mb-4">
             Testimonials
           </h2>
@@ -40,6 +43,7 @@ export default function Testimonials({showBottom}) {
             We love to hear from customers, so please leave a comment or say
             hello in an email.
           </p>
+          </Fade>
         </div>
 
         <Slider {...settings}>

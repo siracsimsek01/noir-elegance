@@ -71,7 +71,7 @@ const Booking = () => {
   return (
     <>
       <Navbar showHeader={true} HeaderContent={"Booking Page"} />
-      <div className="bg-white h-screen font-body flex justify-evenly items-center">
+      <div className="bg-white h-screen font-body flex justify-evenly items-center overflow-hidden">
         <div>
           <div>
             <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-30 after:bg-darkYellow after:h-0.5">

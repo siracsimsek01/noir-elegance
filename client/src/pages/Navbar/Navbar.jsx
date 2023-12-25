@@ -10,6 +10,7 @@ import {
 } from "react-icons/ai";
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
 
+
 const Navbar = ({ showHeader, HeaderContent }) => {
   return (
     <>

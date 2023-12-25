@@ -12,6 +12,7 @@ import {main2,
     main12,} from "../../assets/img/index";
 import { MenuItem, Button } from "../../components/index";
 import { Link } from 'react-router-dom'
+import { Fade } from 'react-awesome-reveal';
 
 export default function MenuView() {
  
@@ -19,6 +20,7 @@ export default function MenuView() {
     return(
 
         <div className="flex justify-around items-center px-40 font-body pt-32 pb-40 bg-white">
+          <Fade direction="left" triggerOnce>
           <div>
             <h3 className="text-gray-800 text-base font-medium uppercase pb-3">
               Menu
@@ -37,8 +39,10 @@ export default function MenuView() {
             <Link to="/menu">See all dishes</Link>
           </Button>
           </div>
+          </Fade>
           <div>
             <div className="flex flex-col gap-4 justify-end items-center mt-52">
+              <Fade direction="top" triggerOnce>
               <div id="starters">
                 <h2 className="text-gray-800 text-3xl font-bold mb-5" >
                   Starters
@@ -76,7 +80,8 @@ export default function MenuView() {
                   price="$30"
                 />
               </div>
-
+             </Fade>
+             <Fade direction="top" triggerOnce>
               <div>
                 <h2 className="text-gray-800 text-3xl font-bold mb-5">
                   Main Dish
@@ -113,6 +118,8 @@ export default function MenuView() {
                   price="$25"
                 />
               </div>
+              </Fade>
+              <Fade direction="top" triggerOnce>
               <div>
                 <h2 className="text-gray-800 text-3xl font-bold mb-5">
                   Dessert
@@ -134,6 +141,7 @@ export default function MenuView() {
                   price="$40"
                 />
               </div>
+              </Fade>
             </div>
           </div>
         </div>

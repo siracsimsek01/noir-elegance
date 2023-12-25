@@ -29,18 +29,26 @@ import {
   StrawberryTart,
   Waffle,
 } from "../../assets/img/index";
+import { Fade } from 'react-awesome-reveal';
+import { FaD } from "react-icons/fa6";
 
 const Menu = () => {
   return (
     <>
       <Navbar showHeader={true} HeaderContent={"Menu"} />
-      <div className="bg-white flex justify-center gap-16 items-center font-body h-screen ">
+      <div className="bg-white flex justify-evenly px-52  items-center font-body h-screen ">
+        <Fade direction="left" triggerOnce>
         <div>
           <img src={Menu1} alt="Menu1" />
         </div>
+        </Fade>
+  
         <div id="starters" className="self-start mt-36">
+          <Fade cascade triggerOnce>
           <h2 className="text-gray-800 text-3xl font-bold mb-5">Starters</h2>
-
+          </Fade>
+         
+         <Fade cascade damping={0.2} delay={500} triggerOnce>
           <MenuItem
             imgSrc={main3}
             imgAlt="main3"
@@ -48,6 +56,8 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$40"
           />
+        
+
 
           <MenuItem
             imgSrc={main4}
@@ -56,7 +66,8 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$20"
           />
-
+        
+        
           <MenuItem
             imgSrc={main5}
             imgAlt="main5"
@@ -64,7 +75,8 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$25"
           />
-
+     
+       
           <MenuItem
             imgSrc={main6}
             imgAlt="main6"
@@ -72,7 +84,8 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$30"
           />
-
+     
+       
           <MenuItem
             imgSrc={ChickenNoodleSoup}
             imgAlt="ChickenNoodleSoup"
@@ -80,6 +93,8 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$25"
           />
+         
+       
           <MenuItem
             imgSrc={ChickenWithMushroom}
             imgAlt="Chicken With Mushroom"
@@ -87,6 +102,8 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$45"
           />
+      
+        
           <MenuItem
             imgSrc={ChineseSoup}
             imgAlt="ChineseSoup"
@@ -94,17 +111,21 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$15"
           />
+       </Fade>
         </div>
       </div>
 
+    
       <div>
         <img src={MenuBg} alt="MenuBg" />
       </div>
 
       <div className="bg-white flex justify-evenly items-center font-body h-screen">
         <div className="self-start mt-40">
+          <Fade cascade triggerOnce>
           <h2 className="text-gray-800 text-3xl font-bold mb-5">Main Dish</h2>
-
+          </Fade>
+        <Fade cascade damping={0.2} delay={500} triggerOnce>
           <MenuItem
             imgSrc={main7}
             imgAlt="main7"
@@ -156,11 +177,13 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$55"
           />
+          </Fade>
         </div>
-
+      <Fade direction="right" triggerOnce>
         <div>
           <img src={Menu2} alt="Menu2" />
         </div>
+      </Fade>
       </div>
 
       <div>
@@ -168,12 +191,16 @@ const Menu = () => {
       </div>
 
       <div className="bg-white flex justify-center gap-28 items-center font-body h-screen">
+        <Fade direction="left" triggerOnce>
         <div>
           <img src={Menu3} alt="Menu3" />
         </div>
+        </Fade>
         <div className="self-start mt-40">
+          <Fade cascade triggerOnce>
           <h2 className="text-gray-800 text-3xl font-bold mb-5">Dessert</h2>
-
+          </Fade>
+          <Fade cascade damping={0.2} delay={500} triggerOnce>
           <MenuItem
             imgSrc={main11}
             imgAlt="main11"
@@ -217,6 +244,7 @@ const Menu = () => {
             description="Candied Jerusalem artichokes, truffle"
             price="$10"
           />
+          </Fade>
         </div>
       </div>
       <Reserve />

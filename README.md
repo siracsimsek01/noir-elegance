@@ -1,7 +1,7 @@
 
 
 ```markdown
-# Full-Stack MERN Application
+# Noir Elegance | Full-Stack MERN Application
 
 This is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It includes a user form that sends data to a MongoDB database.
 
@@ -15,7 +15,7 @@ Before running this application, make sure you have the following installed:
 Clone the repository to your local machine:
 
 ```
-git clone https://github.com/your-repository/your-project.git
+git clone https://github.com/siracsimsek01/noir-elegance
 cd noir-elegance
 ```
 
@@ -56,7 +56,7 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 ## Usage
 
-With both the frontend and backend servers running, open your web browser to [http://localhost:3000]. Fill out the form and submit it. The data will be sent to the backend server and stored in MongoDB.
+With both the frontend and backend servers running, open your web browser to [http://localhost:3000]. Fill out the Reservation form either in end of the page or the link in the Navbar (Reservation) and submit it. The data will be sent to the backend server and stored in MongoDB.
 
 ## Connecting to the MongoDB Database
 

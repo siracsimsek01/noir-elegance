@@ -11,6 +11,7 @@ import {
 import { FaXTwitter, FaPinterest } from "react-icons/fa6";
 
 
+
 const Navbar = ({ showHeader, HeaderContent }) => {
   return (
     <>
@@ -35,7 +36,9 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             size={22}
           />
           <Button className="font-body" type="secondary">
+            <Link to="/booking">
             Reservation
+            </Link>
           </Button>
         </div>
       </div>

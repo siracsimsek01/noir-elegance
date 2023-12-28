@@ -75,6 +75,7 @@ If you have been granted access to the MongoDB database for this project, you ca
 
 The MongoDB URI: mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/?retryWrites=true&w=majority
 
+You can navigate /server directory and you will find .env file. Copy and paste MongoDB URI to MongoDB extension. Then navigate the cluster-1. In the test folder, you should be able to see reservations folder. Click to reservations then in Indexes you should display all the reservations that entered on the website. You can test by creating your own reservation.
 
 
 ## Contributing

@@ -14,7 +14,6 @@ Before running this application, make sure you have the following installed:
 
 Clone the repository to your local machine:
 
-```
 git clone https://github.com/siracsimsek01/noir-elegance
 cd noir-elegance
 ```
@@ -75,7 +74,13 @@ If you have been granted access to the MongoDB database for this project, you ca
 
 The MongoDB URI: mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/?retryWrites=true&w=majority
 
-You can navigate /server directory and you will find .env file. Copy and paste MongoDB URI to MongoDB extension. Then navigate the cluster-1. In the test folder, you should be able to see reservations folder. Click to reservations then in Indexes you should display all the reservations that entered on the website. You can test by creating your own reservation.
+Accessing the Database:
+
+To connect to the MongoDB database, navigate to the /server directory and locate the .env file.
+Copy your MongoDB URI into the MongoDB extension.
+Next, go to cluster-1 and open the test folder. Here, you'll find the reservations folder.
+Inside reservations, click on Documents to view all reservation entries with their IDs as entered on the website.
+To test the functionality, create a new reservation on the website. You will then see this new entry reflected in the Documents folder of the database.
 
 
 ## Contributing

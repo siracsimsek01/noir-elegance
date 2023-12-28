@@ -76,7 +76,7 @@ const Booking = () => {
       <div className="bg-white h-screen font-body flex justify-evenly items-center overflow-hidden">
         <div>
           <div>
-            <Fade cascade>
+            <Fade cascade triggerOnce>
             <h2 className="text-gray-800 text-base font-medium font-body uppercase leading-5 tracking-widest after:block after:w-30 after:bg-darkYellow after:h-0.5">
               Reservation
             </h2>
@@ -89,7 +89,7 @@ const Booking = () => {
             </p>
             </Fade>
           </div>
-          <Fade cascade damping={0.5} delay={1200}>
+          <Fade cascade damping={0.5} delay={1200} triggerOnce>
           <form onSubmit={handleSubmit} name="reserve">
             <div className="flex justify-center gap-4 mb-4 pt-10">
      

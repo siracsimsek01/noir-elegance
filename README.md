@@ -55,7 +55,7 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 ## Usage
 
-With both the frontend and backend servers running, open your web browser to [http://localhost:3000]. Fill out the Reservation form either in end of the page or the link in the Navbar (Reservation) and submit it. The data will be sent to the backend server and stored in MongoDB.
+With both the frontend and backend servers running, open your web browser to [http://localhost:3000]. Fill out the Reservation form either at the end of the page or the link in the Navbar (Reservation) and submit it. The data will be sent to the backend server and stored in MongoDB.
 
 ## Connecting to the MongoDB Database
 
@@ -74,13 +74,17 @@ If you have been granted access to the MongoDB database for this project, you ca
 
 The MongoDB URI: mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/?retryWrites=true&w=majority
 
-Accessing the Database:
+3. **Accessing the Database**:
 
-To connect to the MongoDB database, navigate to the /server directory and locate the .env file.
-Copy your MongoDB URI into the MongoDB extension.
-Next, go to cluster-1 and open the test folder. Here, you'll find the reservations folder.
-Inside reservations, click on Documents to view all reservation entries with their IDs as entered on the website.
-To test the functionality, create a new reservation on the website. You will then see this new entry reflected in the Documents folder of the database.
+- To connect to the MongoDB database, first navigate to the /server directory and locate the .env file to get the MongoDB URI.
+
+- Copy the MongoDB URI into the MongoDB extension.
+  
+- Next, connect to URI and you will see the cluster. Navigate the cluster and open the test folder. Here, you'll find the reservations folder.
+
+- Inside reservations, click on Documents to view all reservation entries with their IDs as entered on the website.
+
+- To test the functionality, create a new reservation on the website. You will then see this new entry reflected in the Documents folder of the database.
 
 
 ## Contributing

@@ -57,6 +57,8 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 With both the frontend and backend servers running, open your web browser to [http://localhost:3000]. Fill out the Reservation form either at the end of the page or the link in the Navbar (Reservation) and submit it. The data will be sent to the backend server and stored in MongoDB.
 
+In order to access the main codes of the project navigate the client/src/pages for frontend, server/app.js for the backend.
+
 ## Connecting to the MongoDB Database
 
 If you have been granted access to the MongoDB database for this project, you can connect to it using the MongoDB extension in Visual Studio Code. Here's how to set it up:

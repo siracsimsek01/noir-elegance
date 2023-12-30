@@ -89,7 +89,7 @@ const Navbar = ({ showHeader, HeaderContent }) => {
             </li>
             <li>
               <Link
-                to="/footer"
+                to="/contact"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Contact

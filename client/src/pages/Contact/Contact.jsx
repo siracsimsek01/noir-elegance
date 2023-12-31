@@ -50,26 +50,37 @@ const Contact = () => {
             domination the end of the day going real times multiple touchpoints.
           </p>
 
-          <div className="mt-10 flex flex-col gap-10  ">
-            <span className="relative">
-              {circle}
-              <IoLocationOutline size={23} color="#fff" className="z-10 absolute -top-6 left-3" />
-              <h3 className="text-neutral-600 text-xl font-normal leading-relaxed">Riverside 25, San Francisco, California</h3>
-            </span>
-            <span className="relative">
-              {circle}
-              <MdMailOutline size={23} color="#fff" className="z-10 absolute -top-6 left-3"/>
-              <h3 className="text-neutral-600 text-xl font-normal leading-relaxed">evanmattew@mail.com</h3>
-            </span>
-            <span className="relative">
-              {circle}
-              <BsTelephone size={23} color="#fff" className="z-10 absolute -top-6 left-3"/>
-              <h3 className="text-neutral-600 text-xl font-normal leading-relaxed">evanmattew@mail.com</h3>
-            </span>
-          </div>
+            <div className="flex flex-col gap-10 mt-16">
+                <div className="inline-flex">
+                    <span className="relative">
+                        {circle}
+                        <IoLocationOutline size={23} color="#fff" className="z-10 absolute -top-8 left-3" />
+                    </span>
+                    <span>
+                        <h3>Riverside 25, San Francisco, California</h3>
+                    </span>
+                </div>
+                <div className="inline-flex">
+                    <span className="relative">
+                        {circle}
+                        <MdMailOutline size={23} color="#fff" className="z-10 absolute -top-8 left-3"/>
+                    </span>
+                    <span>
+                        <h3>evanmattew@mail.com</h3>
+                    </span>
+                </div>
+                <div className="inline-flex">
+                    <span className="relative">
+                        {circle}
+                        <BsTelephone size={23} color="#fff" className="z-10 absolute -top-8 left-3"/>
+                    </span>
+                    <span>
+                        <h3>800-234-567</h3>
+                    </span>
+                </div>
+            </div>
         </div>
-      </div>
-      {/* <div className="max-w-2xl mx-auto p-8">
+        {/* <div className="max-w-2xl mx-auto p-8">
       <h2 className="text-2xl font-bold mb-6">Have a Question?</h2>
       <form onSubmit={handleSubmit} className="grid gap-4">
         <input
@@ -119,6 +130,7 @@ const Contact = () => {
         </button>
       </form>
     </div> */}
+      </div>
       <Footer />
     </>
   );

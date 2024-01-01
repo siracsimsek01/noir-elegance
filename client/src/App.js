@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Home, About, Menu, Booking, Chefs, Contact } from "./pages/index";
+import { Home, About, Menu, Booking, Chefs } from "./pages/index";
 import "./App.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/chefs" element={<Chefs />} />
         <Route path="/booking" element={<Booking />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       </ParallaxProvider>
     </>

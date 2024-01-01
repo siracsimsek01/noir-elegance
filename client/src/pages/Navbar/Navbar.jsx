@@ -87,14 +87,14 @@ const Navbar = ({ showHeader, HeaderContent }) => {
                 Chefs
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/contact"
                 className="hover:text-neutral-600 transition-all duration-300"
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <ul className="inline-flex gap-4">

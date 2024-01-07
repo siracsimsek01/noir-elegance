@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Reserve.css";
 import { Reservation1 } from "../../assets/img/index";
-// import Transition from "../../transition";      
 import { Fade } from "react-awesome-reveal";
 
 const Reserve = () => {

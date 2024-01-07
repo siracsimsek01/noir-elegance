@@ -44,8 +44,9 @@ The server should now be running on [http://localhost:5000](http://localhost:505
 
 Navigate to the client directory from the root of the project and install the dependencies:
 
+```cd client ```
+
 ```
-cd ../client
 npm install
 npm run build
 ```

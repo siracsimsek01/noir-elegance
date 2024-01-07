@@ -15,10 +15,13 @@ Before running this application, make sure you have the following installed:
 ## Installation
 
 Clone the repository to your local machine:
-
+```
 git clone https://github.com/siracsimsek01/noir-elegance
+```
+Then:
+```
 cd noir-elegance
-
+```
 
 ## Backend Setup
 

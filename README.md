@@ -75,10 +75,13 @@ If you have been granted access to the MongoDB database for this project, you ca
 3. **Enter the Connection URI**:
    - On the start screen, paste your connection string into the field labeled ‘Paste your connection string’.
    - The connection string typically looks like this:
-     ```
-     mongodb+srv://<username>:<password>@<cluster-url>/<dbname>?retryWrites=true&w=majority
-     ```
-     Enter this connection string: ``` mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/ ```
+     
+     ``` mongodb+srv://<username>:<password>@<cluster-url>/<dbname>?retryWrites=true&w=majority ```
+     
+Enter this connection string:
+     
+       mongodb+srv://developmentsimsek:noirpass@cluster-1.ouc5riu.mongodb.net/
+     
 
 4. **Initiate Connection**:
    - Click the 'CONNECT' button to establish a connection with your MongoDB database.
